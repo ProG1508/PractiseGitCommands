@@ -1,6 +1,6 @@
 #!/bin/bash
 
-const=10;
+const=20;
 
 for((i=1; i<=$const;i++))
 do
