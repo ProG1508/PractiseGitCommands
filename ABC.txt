@@ -1,0 +1,22 @@
++------------------+       (1)      +------------------+         (2)       +------------------+
+| Main Branch      |---------------->| Create Branch    |------------------>| Feature Branch   |
+|------------------|     `git branch` |------------------|     `git checkout` |------------------|
+| README.md        |       (3)       | README.md        |         (4)       | README.md        |
++------------------+                  |------------------|------------------+------------------+
+          |                            |        |                                      |
+          v                            v        v                                      |
+   (Make Changes on `main`)  (Make Changes on `feature`)                         |
+          |                            |        |                                      |
+          v                            v        v                                      |
+   (Commit Changes)      (Commit Changes on `feature`)                             |
+          |                            |        |                                      |
+          v                            v        v                                      |
+      (Switch Branches to `main`)     (Switch Back to `main`)                       |
+          |                            |        |                                      |
+          v                            v        v                                      |
+   (Merge `feature` into `main`)      (Push Changes to GitHub)                       |
+          |                            |        |                                      |
+          v                            v        v                                      |
+   (Push `main` to remote)            (Merged Changes on GitHub)                      |
+          |                            |                                             |
+          +----------------------------+-----------------------------------------+

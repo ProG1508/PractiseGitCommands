@@ -1,0 +1,36 @@
+#!/bin/bash
+
+const=20;
+
+for((i=1; i<=$const;i++))
+do
+	num=$((RANDOM%1000))
+		if [ $num -lt 100 ]
+		then
+			i=$(($i-1));
+		else
+			echo "$num"
+			arr[$i]=$num
+			
+		if [ ${arr[0]} > 0 ]
+	then
+		max=${arr[0]}
+		
+		if [ ${arr[$i]} -gt $max ]
+		then
+			arr2[$i]=$max
+		fi
+	
+	fi
+		
+	fi
+
+	
+done
+echo entered array is ${arr[@]}
+
+
+echo ${arr2[@]}
+
+
+
